@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="theme">Dark mode</button>
+    <div class="message-error">
+      <h1>Une erreur est survenue lors de l'envoi du formulaire</h1>
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <h1>Votre formulaire a bien été envoyé</h1>
+    </div>
+    <form id="formulaire">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="radios">Radio 1 :</label>
+        <input type="radio" name="radios" id="radio1" value="radio1" />
+        <label for="radio1">Radio 2</label>
+        <input type="radio" name="radios" id="radio2" value="radio2" />
+        <label for="radio2">Radio 3</label>
+        <input type="radio" name="radios" id="radio3" value="radio3" />
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Axe 1</option>
+          <option value="axe2">Axe 2</option>
+          <option value="axe3">Axe 3</option>
+        </select>
+      </div>
+      <button>S'inscrire</button>
+    </form>
+
+    <ul
+      id="tab-list"
+      style="display: flex; gap: 2vw; cursor: pointer; margin-top: 2vh"
+    >
+      <li data-tab="1" class="tab tab-axe1 tab-active">
+        <button>Coding</button>
+      </li>
+      <li data-tab="2" class="tab tab-axe2"><button>Crea Design</button></li>
+      <li data-tab="3" class="tab tab-axe3"><button>3D</button></li>
+      <li data-tab="4" class="tab tab-axe4"><button>Jeu Vidéo</button></li>
+      <li data-tab="5" class="tab tab-axe5"><button>CDEB</button></li>
+    </ul>
+    <div class="tabs-container" style="max-width: 50vw">
+      <div class="content-1 active" style="display: none">
+        Contenu sur l'axe Coding : Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Dolore magnam quia et, sapiente doloribus placeat odit
+        provident porro a quibusdam voluptates, officia suscipit distinctio!
+        Nesciunt.
+      </div>
+      <div class="content-2" style="display: none">
+        Contenu sur l'axe Créa : Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Placeat, reiciendis totam? Ipsa molestias aliquam
+        expedita. Possimus eum animi in tenetur, quia dolor labore cupiditate
+        fugiat.
+      </div>
+      <div class="content-3" style="display: none">
+        Contenu sur l'axe 3D : Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Eaque quod sapiente est veniam quae unde culpa placeat
+        consequuntur? Officiis qui sunt eius odit ratione velit!
+      </div>
+      <div class="content-4" style="display: none">
+        Contenu sur l'axe JV : Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Iure ducimus fuga suscipit, vero amet expedita labore
+        consequatur accusamus modi consectetur officiis eum animi assumenda
+        mollitia.
+      </div>
+      <div class="content-5" style="display: none">
+        Contenu sur l'axe Comm et E-Business : Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Alias, nobis molestiae fuga necessitatibus
+        fugit sed perspiciatis quos laudantium nam molestias omnis sapiente
+        animi dicta quia?
+      </div>
+    </div>
+
+    <div class="swiper images-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://picsum.photos/2000?grayscale&blur=2&random=1"
+            alt=""
+          />
+          <h1>Titre JPO 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            minus sed id praesentium ducimus beatae aperiam adipisci enim
+            dolores voluptatem, distinctio officiis. Esse natus veniam eligendi
+            omnis perspiciatis, quos perferendis tempora? Nulla aliquam sed sint
+            sit ratione eos voluptatibus aspernatur consequuntur praesentium rem
+            officiis, omnis, explicabo harum neque dolores repellendus.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://picsum.photos/2000?grayscale&blur=2&random=2"
+            alt=""
+          />
+          <h1>Titre JPO 2</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem blanditiis, deserunt dolorum vero molestias ut quos
+            ex, laudantium quo soluta quas facilis voluptates. Inventore illum
+            ullam voluptatibus qui minus quae, corrupti mollitia porro
+            blanditiis. Corporis eligendi quasi laborum explicabo iste fugit
+            eos, atque optio omnis dicta ipsam a vel provident!
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://picsum.photos/2000?grayscale&blur=2&random=3"
+            alt=""
+          />
+          <h1>Titre JPO 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            distinctio eaque id doloribus, error ipsa beatae vel ratione
+            deserunt facilis similique magnam repellendus neque vitae ipsam
+            porro culpa, qui illum! Ad animi aperiam saepe obcaecati modi
+            quaerat accusamus! Omnis, quaerat consequuntur necessitatibus ab
+            perferendis consequatur exercitationem culpa iste pariatur
+            temporibus?
+          </p>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <script>
+      var swiper = new Swiper(".images-swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
